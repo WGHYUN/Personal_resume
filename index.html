@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]吴桂婉的个人简历</title>
+    <link rel="shortcut icon" href="assets/images/ico.jpg" type="image/ico.jpg">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header> <!--使用了header标签 -->
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 加入个人弹性头像照片 -->
+                    <img class="avatar" src="https://raw.githubusercontent.com/WGHYUN/Personal_resume/main/wgw.jpg" max-width:100%  onload="loading()">  
+                </section>
+
+                <h1 class="name">吴桂婉</h1>
+                <h4 class="info-job">广州南方学院在校学生</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>吴桂婉 / 女 / 20岁</span>
+                    </li>
+                    <li>
+                        <label>居住地</label>
+                        <span>深圳</span>
+                    </li>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">198-5454-7806</a>
+                    </li>
+                    <li>
+                        <label>个人邮箱</label>
+                        <a href="2382588169@qq.com" target="_blank">2382588169@qq.com</a>
+        
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>个人项目作品网址</h2>
+                <hr/>
+                <ul>
+                    
+                    <li>
+                        <label>码云gitee</label>
+                        <a href="https://gitee.com/wu_guizhou_wan" target="_blank">https://gitee.com/wu_guizhou_wan</a>
+                    </li>
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/WGHYUN" target="_blank">https://github.com/WGHYUN</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                   <li>
+                        <label>office软件</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                        <label>HTML&CSS语言</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>PS&AI</label>
+                        <progress value="65" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>InDesign排版</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Pr视频剪辑</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>微信公众号</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>jazz舞蹈</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+            
+        </section>
+
+        <main class="main">  <!--使用了main标签 -->
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>中山大学南方学院-网络与新媒体专业-产品经理方向（本科）</span>
+                            <time>2019.9-2023.7</time>
+                        </h3>
+                        <ul class="info-content">
+                                <li>大一 GPA 3.80/5 专业第六 二等奖学金</li>
+                                <li>已学习的专业核心课程：网页设计、信息可视化设计、Python、API_机器学习与人工智能、网站运营与管理、APP设计与制作、web数据挖掘</li>
+                                
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 在校经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-map-o" aria-hidden="true"></i>在校经历</h2> <!--更改了font_awesome图标 -->
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>文学与传媒学院团总支-宣传部干事</span>
+                            <time>2019.6-2020.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>参与各大活动场地布置和主持手牌的设计
+                            </li>
+                            <li>积极参与院内举办的以疫情为主题的<mark>海报设计比赛</mark></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <h3>
+                            <span>院系部门-蓝鸟通讯社-记者部干事</span>
+                            <time>2019.6-2020.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>参与记者部的培训，锻炼写新闻稿的能力
+                            </li>
+                            <li>参与了两次部门任务：<mark>晚会新闻稿和篮球赛新闻稿</mark>的撰写</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>校级部门-心晴守望者杂志策划部的美编成员</span>
+                            <time>2019.6-2020.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>参与每周一次的美编培训，对ps和ID两款软件进行系统学习
+                            </li>
+                            <li>参与了<mark>心晴杂志2020年第九期</mark>的杂志排版工作</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>校级部门-心晴守望者杂志策划部主编</span>
+                            <time>2020.9-2021.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>作为杂志部门的主要负责人，总领部门各项事务。包括：新干事的招新和面试、通知安排，开会商讨、计划部门的工作和培训计划
+                            </li>
+                            <li>作为<mark>心晴杂志2021年第十期</mark>的主编，跟进前期征文和后期排版的工作</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span>校级街舞社团-DMC Crew jazz队队员</span>
+                            <time>2021.4-</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>积极出校参与齐舞比赛、参与校内社团缤纷夜等晚会的表演
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- 课程项目展示 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-tasks" aria-hidden="true"></i>项目展示</h2> <!--更改了font_awesome图标 -->
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span><a href="https://gitee.com/wu_guizhou_wan/api_final">产品“爱上记账”prd文档</a></span>
+                            <time>2021.2</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>该项目为专业核心课程[API，机器学习与人工智能]的期末项目
+                            </li>
+                            <li>该项目要求为所设计的产品提供一个产品需求文档，里面涵盖了API（应用程序接口）技术来源、产品的市场分析及用户分析、还有产品原型的交互链接</li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <h3>
+                            <span><a href="https://gitee.com/wu_guizhou_wan/flask_app">Python&flask:天气查询功能实现</a></span>
+                            <time>2020.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>该项目为专业核心课程[Python]的平时课程项目
+                            </li>
+                            <li>该项目要求利用前端框架flask及python语言和api调用 实现一个简单的可以提供天气查询功能的网页</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><a href="https://gitee.com/wu_guizhou_wan/product-interface-design/tree/master/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A">Search-LightAPP-界面设计</a></span>
+                            <time>2021.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>该项目为专业方向课程[产品界面设计]的期末项目，同时用作参与2021年六月<mark>NCDA的的视觉设计UI类比赛</mark>
+                            </li>
+                            <li>个人负责了产品的竞品分析、产品介绍的<a href="https://gitee.com/wu_guizhou_wan/product-interface-design/blob/master/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/%E7%95%8C%E9%9D%A2%E4%BD%9C%E5%93%81.jpg">长图排版</a>和<a href="https://gitee.com/wu_guizhou_wan/product-interface-design/blob/master/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/%E7%95%8C%E9%9D%A2%E6%B5%B7%E6%8A%A5.jpg">海报设计</a> 主要使用ps软件实现</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><a href="https://pan.baidu.com/play/video#/video?path=%2F%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2FNCDA%2FNCDA.mp4&t=-1">NCDA数字媒体高校设计比赛-联合国可持续发展目标公益赛事-动画视频</a></span>
+                            <time>2020.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>同专业的两位师姐组队参与比赛，围绕可持续发展目标13：气候行动，制作基于ppt动画技术的视频文件，个人负责了部分ppt动画制作及视频制作部分
+                            </li>
+                            <li>在2020年9月份凭借这份作品获得全国赛三等奖</li>
+                        </ul>
+                    </li>       
+            </section>
+
+            <!-- 获奖经历 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>获奖经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>优秀学生二等奖学金[校级]</span>
+
+                            <time> 2019-2020学年</time>
+                        </h3>
+                    </li>  
+                   
+                   <li>
+                        <h3>
+                            <span>第八届全国高校数字艺术设计大赛[国家级]</span>
+
+                            <time> 2020.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>联合国可持续发展目标公益赛事 学生团队三等奖</li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>第六届深圳国际创客周“洞悉未来创新共创营”[市级]</span>
+
+                            <time> 2020.10</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>路演三等奖</li>
+
+                        </ul>
+                    </li>  
+                    
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价与期望</h2>
+                <hr/>
+                <ul class="info-content">
+                            <li>自认为是一个学习能力、抗压能力、适应能力都较强的人，对<mark>设计类</mark>的比赛和项目有着浓厚兴趣</li>
+                </ul>
+                <ul class="info-content">
+                            <li>“做行动上的巨人”是我给自己总结的“七字箴言”，时刻提醒自己不要盲目张口说大话，应将承诺与目标兑现于实践中。期望自己能通过脚踏实地的实践，找到自己真正心仪的从业方向</li>
+                </ul>
+            </section>
+    </main>
+
+
+
+    <footer class="footer"> <!--使用了footer标签 -->
+        <p>【吴桂婉的个人简历】最后更新时间为
+            <time>2021年7月1日</time>.</p>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
